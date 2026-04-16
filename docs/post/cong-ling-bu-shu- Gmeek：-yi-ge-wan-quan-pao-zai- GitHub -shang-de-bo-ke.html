@@ -10,8 +10,7 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="```markdown
-# 从零部署 Gmeek：一个完全跑在 GitHub 上的博客
+<meta name="description" content="# 从零部署 Gmeek：一个完全跑在 GitHub 上的博客
 
 > “When I'm six feet under, this will still be running on GitHub's servers rent-free.”
 
@@ -19,8 +18,7 @@
 
 我不想买服务器、不想配数据库、不想折腾 WordPress。">
 <meta property="og:title" content="从零部署 Gmeek：一个完全跑在 GitHub 上的博客">
-<meta property="og:description" content="```markdown
-# 从零部署 Gmeek：一个完全跑在 GitHub 上的博客
+<meta property="og:description" content="# 从零部署 Gmeek：一个完全跑在 GitHub 上的博客
 
 > “When I'm six feet under, this will still be running on GitHub's servers rent-free.”
 
@@ -97,56 +95,38 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><div class="highlight highlight-text-md"><pre class="notranslate"><span class="pl-mh"># <span class="pl-en">从零部署 Gmeek：一个完全跑在 GitHub 上的博客</span></span>
-
-<span class="pl-ent"><span class="pl-ent">&gt; </span>“When I'm six feet under, this will still be running on GitHub's servers rent-free.”</span>
-<span class="pl-ent"></span>
-<span class="pl-mh">## <span class="pl-en">为什么选 Gmeek？</span></span>
-
-我不想买服务器、不想配数据库、不想折腾 WordPress。
-
-我只想写东西，写完就能发，最好还能白嫖。
-
-Gmeek 正好满足：<span class="pl-s">**</span>GitHub Issues 写文章 + GitHub Actions 自动构建 + GitHub Pages 免费托管<span class="pl-s">**</span>。
-
-All in GitHub，一分钱不用花。
-
-<span class="pl-mh">## <span class="pl-en">第1步：创建仓库</span></span>
-
-登录 GitHub，点击 <span class="pl-s">[</span>Gmeek 模板链接<span class="pl-s">]</span><span class="pl-s">(</span><span class="pl-corl">https://github.com/new?template_name=Gmeek&amp;template_owner=Meekdai</span><span class="pl-s">)</span>，创建一个新仓库。
-
-<span class="pl-s">**</span>关键点<span class="pl-s">**</span>：仓库名必须是 <span class="pl-s">`</span><span class="pl-c1">你的用户名.github.io</span><span class="pl-s">`</span>。
-
-比如我的用户名是 <span class="pl-s">`</span><span class="pl-c1">luoyixiang</span><span class="pl-s">`</span>，仓库名就是 <span class="pl-s">`</span><span class="pl-c1">luoyixiang.github.io</span><span class="pl-s">`</span>。
-
-<span class="pl-ent"><span class="pl-ent">&gt; </span>⚠️ 注意：你登录的账号是谁，Owner 就是谁。如果想用另一个账号的域名，需要切换账号登录。</span>
-<span class="pl-ent"></span>
-<span class="pl-mh">## <span class="pl-en">第2步：启用 GitHub Pages</span></span>
-
-进入仓库的 <span class="pl-s">**</span>Settings → Pages → Build and deployment<span class="pl-s">**</span>，把 Source 改成 <span class="pl-s">**</span>GitHub Actions<span class="pl-s">**</span>。
-
-这一步告诉 GitHub：用 Actions 来自动构建博客，而不是默认的 Jekyll。
-
-<span class="pl-mh">## <span class="pl-en">第3步：写第一篇文章</span></span>
-
-点击 <span class="pl-s">**</span>Issues → New issue<span class="pl-s">**</span>。
-
-<span class="pl-v">-</span> 标题：文章标题
-<span class="pl-v">-</span> 正文：Markdown 格式的内容
-<span class="pl-v">-</span> <span class="pl-s">**</span>最重要<span class="pl-s">**</span>：右边 Labels 必须至少添加一个标签（比如“随笔”）
-
-没有标签，Gmeek 不会生成这篇文章。
-
-保存 Issue 后，GitHub Actions 会自动触发构建。等几分钟，访问 <span class="pl-s">`</span><span class="pl-c1">https://你的用户名.github.io</span><span class="pl-s">`</span> 就能看到了。
-
-<span class="pl-mh">## <span class="pl-en">第4步：个性化配置</span></span>
-
-仓库根目录下的 <span class="pl-s">`</span><span class="pl-c1">config.json</span><span class="pl-s">`</span> 是配置文件。
-
-<span class="pl-mh">### <span class="pl-en">基础配置示例</span></span>
-
-<span class="pl-s">```</span><span class="pl-en">json</span>
-{
+<div class="markdown-body" id="postBody"><h1>从零部署 Gmeek：一个完全跑在 GitHub 上的博客</h1>
+<blockquote>
+<p>“When I'm six feet under, this will still be running on GitHub's servers rent-free.”</p>
+</blockquote>
+<h2>为什么选 Gmeek？</h2>
+<p>我不想买服务器、不想配数据库、不想折腾 WordPress。</p>
+<p>我只想写东西，写完就能发，最好还能白嫖。</p>
+<p>Gmeek 正好满足：<strong>GitHub Issues 写文章 + GitHub Actions 自动构建 + GitHub Pages 免费托管</strong>。</p>
+<p>All in GitHub，一分钱不用花。</p>
+<h2>第1步：创建仓库</h2>
+<p>登录 GitHub，点击 <a href="https://github.com/new?template_name=Gmeek&amp;template_owner=Meekdai">Gmeek 模板链接</a>，创建一个新仓库。</p>
+<p><strong>关键点</strong>：仓库名必须是 <code class="notranslate">你的用户名.github.io</code>。</p>
+<p>比如我的用户名是 <code class="notranslate">luoyixiang</code>，仓库名就是 <code class="notranslate">luoyixiang.github.io</code>。</p>
+<blockquote>
+<p><g-emoji class="g-emoji" alias="warning">⚠️</g-emoji> 注意：你登录的账号是谁，Owner 就是谁。如果想用另一个账号的域名，需要切换账号登录。</p>
+</blockquote>
+<h2>第2步：启用 GitHub Pages</h2>
+<p>进入仓库的 <strong>Settings → Pages → Build and deployment</strong>，把 Source 改成 <strong>GitHub Actions</strong>。</p>
+<p>这一步告诉 GitHub：用 Actions 来自动构建博客，而不是默认的 Jekyll。</p>
+<h2>第3步：写第一篇文章</h2>
+<p>点击 <strong>Issues → New issue</strong>。</p>
+<ul>
+<li>标题：文章标题</li>
+<li>正文：Markdown 格式的内容</li>
+<li><strong>最重要</strong>：右边 Labels 必须至少添加一个标签（比如“随笔”）</li>
+</ul>
+<p>没有标签，Gmeek 不会生成这篇文章。</p>
+<p>保存 Issue 后，GitHub Actions 会自动触发构建。等几分钟，访问 <code class="notranslate">https://你的用户名.github.io</code> 就能看到了。</p>
+<h2>第4步：个性化配置</h2>
+<p>仓库根目录下的 <code class="notranslate">config.json</code> 是配置文件。</p>
+<h3>基础配置示例</h3>
+<div class="highlight highlight-source-json"><pre class="notranslate">{
     <span class="pl-ent">"title"</span>: <span class="pl-s"><span class="pl-pds">"</span>我的博客<span class="pl-pds">"</span></span>,
     <span class="pl-ent">"subTitle"</span>: <span class="pl-s"><span class="pl-pds">"</span>记录学习与思考<span class="pl-pds">"</span></span>,
     <span class="pl-ent">"avatarUrl"</span>: <span class="pl-s"><span class="pl-pds">"</span>https://github.com/用户名.png<span class="pl-pds">"</span></span>,

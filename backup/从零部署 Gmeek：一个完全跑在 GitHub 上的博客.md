@@ -1,4 +1,3 @@
-```markdown
 # 从零部署 Gmeek：一个完全跑在 GitHub 上的博客
 
 > “When I'm six feet under, this will still be running on GitHub's servers rent-free.”
