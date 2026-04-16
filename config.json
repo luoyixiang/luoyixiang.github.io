@@ -3,6 +3,7 @@
     "subTitle":"Even after I'm gone, it will live on forever on GitHub.",
     "avatarUrl": "https://github.com/luoyixiang.png",
     "GMEEK_VERSION":"last",
+    "allHead": "<script> (function() { var a_idx = 0; window.onclick = function(event) { var a = [\"富强\", \"民主\", \"文明\", \"和谐\", \"自由\", \"平等\", \"公正\", \"法治\", \"爱国\", \"敬业\", \"诚信\", \"友善\"]; var heart = document.createElement(\"b\"); heart.onselectstart = function() { return false; }; document.body.appendChild(heart).innerHTML = a[a_idx]; a_idx = (a_idx + 1) % a.length; heart.style.zIndex = 9999; heart.style.top = (event.pageY - 20) + \"px\"; heart.style.left = (event.pageX) + \"px\"; heart.style.position = \"absolute\"; heart.style.fontWeight = \"bold\"; heart.style.color = \"#ff6651\"; var f = 16, t = event.pageY - 20, r = 1, i = 1; var timer = setInterval(function() { if (r <= 0) { clearInterval(timer); heart.remove(); } heart.style.top = (t - i) + \"px\"; heart.style.opacity = r; heart.style.fontSize = f + \"px\"; t--; i++; r -= 0.02; }, 15); } })(); </script>",
     "displayTitle":"Youkie",
     "homeUrl":"https://luoyixiang.github.io",
     "email":"luoyixiang900903@gmail.com",
