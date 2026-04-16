@@ -63,7 +63,11 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
             <path id="pathSearch" fill-rule="evenodd"></path>
         </svg>
     </a>
-    
+    <a href="https://luoyixiang.github.io/Gmemp/" class="btn btn-invisible circle" title="music" target="_blank">
+        <svg class="octicon" width="16" height="16" >
+            <path id="music" fill-rule="evenodd"></path>
+        </svg>
+    </a>
     <a href="https://luoyixiang.github.io/about.html" class="btn btn-invisible circle" title="about">
         <svg class="octicon" width="16" height="16" >
             <path id="about" fill-rule="evenodd"></path>
@@ -84,18 +88,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div style="margin-bottom: 16px;">Even after I'm gone, it will live on forever on GitHub.</div>
 <nav class="SideNav border">
-<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/Music.html">
-    <div class="d-flex flex-items-center">
-        <svg class="SideNav-icon octicon" style="width:16px;height:16px"><path class="svgTop0" d=""></path>
-        </svg>
-        <span class="listTitle">Music</span>
-    </div>
-    <div class="listLabels">
-        
-        <span class="Label LabelName" style="background-color:#a122fa"><object><a style="color:#fff" href="tag.html#music">music</a></object></span>
-        <span class="Label LabelTime" style="background-color:#1f883d">2026-04-16</span>
-    </div>
-</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/cong-ling-bu-shu-%20Gmeek%EF%BC%9A-yi-ge-wan-quan-pao-zai-%20GitHub%20-shang-de-bo-ke.html">
+<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/cong-ling-bu-shu-%20Gmeek%EF%BC%9A-yi-ge-wan-quan-pao-zai-%20GitHub%20-shang-de-bo-ke.html">
     <div class="d-flex flex-items-center">
         <svg class="SideNav-icon octicon" style="width:16px;height:16px"><path class="svgTop0" d=""></path>
         </svg>
@@ -183,6 +176,7 @@ for(var i=0;i<iconPost.length;i++){
 }
 
 
+document.getElementById("music").setAttribute("d",value=IconList["music"]);
 
 document.getElementById("about").setAttribute("d",value=IconList["about"]);
 </script>
